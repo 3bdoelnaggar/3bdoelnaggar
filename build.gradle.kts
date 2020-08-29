@@ -22,8 +22,11 @@ dependencies {
 
     //Kotlin Styled (chapter 3)
     implementation("org.jetbrains:kotlin-styled:1.0.0-pre.94-kotlin-1.3.70")
-    implementation(npm("styled-components","5.1.1"))
-    implementation(npm("inline-style-prefixer","1"))
+    implementation(npm("styled-components", "5.1.1"))
+    implementation(npm("inline-style-prefixer", "1"))
+    implementation(npm("react-router", "5.2.0"))
+    implementation(npm("react-router-dom", "5.2.0"))
+
 }
 
 kotlin {

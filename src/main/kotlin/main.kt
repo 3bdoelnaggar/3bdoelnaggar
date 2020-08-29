@@ -6,14 +6,18 @@ import react.dom.*
 import react.dom.h3
 import react.dom.p
 import styled.*
+import styled.StyledComponents.css
 
 fun main() {
+   val apps= "I have around 10 apps most of them was the learning purpose and many of the stopped supportig and may have issues " +
+           "the tow main projects that I am still support and working on from time to time is مطاعم الاسكندرية and صيادين الاسكندرية"
     val root = document.getElementById("root")
-    val briefAboutMe = "Android Developer who played with Java Kotlin Retrofit MVP MVVM MVI Room Koin Files and Git , Stared My first App in 2015 five users ago " +
+    val briefAboutMe = "Android Developer who played with Java Kotlin Retrofit MVP MVVM MVI Room Koin Files and Git , Started My first App in 2015 five users ago " +
             ", Now developed intrest in Koltin js"
 
     console.warn(root)
     render(root) {
+        child(HeaderComponent::class){}
         styledDiv {
             styledH1 {
                 css {
