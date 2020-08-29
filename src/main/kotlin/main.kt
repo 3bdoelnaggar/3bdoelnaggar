@@ -9,6 +9,9 @@ import styled.*
 
 fun main() {
     val root = document.getElementById("root")
+    val briefAboutMe = "Android Developer who played with Java Kotlin Retrofit MVP MVVM MVI Room Koin Files and Git , Stared My first App in 2015 five users ago " +
+            ", Now developed intrest in Koltin js"
+
     console.warn(root)
     render(root) {
         styledDiv {
@@ -18,6 +21,13 @@ fun main() {
                     fontSize = 6.em
                 }
                 +"Abdalla Elnaggar"
+            }
+            styledP {
+                css {
+                    textAlign = TextAlign.center
+                    fontSize = 2.em
+                }
+                +briefAboutMe
             }
 
             styledDiv {
@@ -61,6 +71,7 @@ fun main() {
                         }
                     }
                 }
+
                 a {
                     attrs {
                         href = "https://github.com/3bdoelnaggar/"
@@ -76,39 +87,41 @@ fun main() {
                             src = "./github.png"
 
                         }
+
                     }
                 }
-                a {
-                    attrs {
-                        href = "https://play.google.com/store/apps/developer?id=Abdalla+Elnaggar"
+
+
+                    styledDiv {
+                        a {
+                            attrs {
+                                href = "https://play.google.com/store/apps/developer?id=Abdalla+Elnaggar"
+                            }
+                            styledImg {
+                                css {
+                                    margin = "25px"
+
+                                }
+                                attrs {
+                                    width = "100"
+                                    height = "100"
+                                    src = "./playstore.png"
+
+                                }
+                            }
+                        }
                     }
-                    styledImg {
+                    styledP {
                         css {
-                            margin = "25px"
-
+                            position = Position.absolute
+                            bottom = 0.px
+                            right = 0.px
+                            textAlign = TextAlign.right
+                            margin = "20px"
                         }
-                        attrs {
-                            width = "100"
-                            height = "100"
-                            src = "./playstore.png"
-
-                        }
+                        +"powered by kotlinJS"
                     }
-                }
-                styledP {
-                    css {
-                        position = Position.absolute
-                        bottom = 0.px
-                        right = 0.px
-                        textAlign = TextAlign.right
-                        margin="20px"
-                    }
-                    +"powered by kotlinJS"
                 }
             }
         }
-
     }
-
-
-}
