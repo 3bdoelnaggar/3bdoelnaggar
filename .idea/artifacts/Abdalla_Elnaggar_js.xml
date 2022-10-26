@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Abdalla-Elnaggar-js">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <root id="archive" name="Abdalla-Elnaggar-js.jar" />
+  </artifact>
+</component>
