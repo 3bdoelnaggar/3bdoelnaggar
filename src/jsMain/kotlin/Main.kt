@@ -49,9 +49,9 @@ fun main() {
             }) {
 
                 PlatformLink("./linkedin.png", "https://www.linkedin.com/in/3bdoelnaggar/", attrs)
-                PlatformLink("./github.png", "https://www.linkedin.com/in/3bdoelnaggar/", attrs)
-                PlatformLink("./playstore.png", "https://www.linkedin.com/in/3bdoelnaggar/", attrs)
-                PlatformLink("./twitter.png", "https://www.linkedin.com/in/3bdoelnaggar/", attrs)
+                PlatformLink("./github.png", "https://github.com/3bdoelnaggar/", attrs)
+                PlatformLink("./playstore.png", "https://play.google.com/store/apps/developer?id=Abdalla+Elnaggar", attrs)
+                PlatformLink("./twitter.png", "https://twitter.com/3bdoelnaggar/", attrs)
 
             }
 
