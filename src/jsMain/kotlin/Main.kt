@@ -1,7 +1,4 @@
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
 import org.jetbrains.compose.web.attributes.AttrsScope
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
@@ -10,7 +7,6 @@ import org.w3c.dom.HTMLDivElement
 import org.w3c.dom.HTMLImageElement
 
 fun main() {
-    var count: Int by mutableStateOf(0)
 
     renderComposable(rootElementId = "root") {
         Div({
