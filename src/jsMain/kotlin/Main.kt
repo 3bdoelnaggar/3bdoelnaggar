@@ -7,7 +7,6 @@ import org.w3c.dom.HTMLDivElement
 import org.w3c.dom.HTMLImageElement
 
 fun main() {
-
     renderComposable(rootElementId = "root") {
         Div({
             style {
@@ -29,6 +28,16 @@ fun main() {
                 }) {
                     Text("Abdalla Elnaggar")
                 }
+                Div {
+                    Span({
+                        style {
+                            fontSize(48.px)
+                        }
+                    }) {
+                        Text("Android ||| Spring boot |")
+                    }
+                }
+
             }
             val attrs: AttrsScope<HTMLImageElement>.() -> Unit = {
                 style {
@@ -46,7 +55,11 @@ fun main() {
 
                 PlatformLink("./linkedin.png", "https://www.linkedin.com/in/3bdoelnaggar/", attrs)
                 PlatformLink("./github.png", "https://github.com/3bdoelnaggar/", attrs)
-                PlatformLink("./playstore.png", "https://play.google.com/store/apps/developer?id=Abdalla+Elnaggar", attrs)
+                PlatformLink(
+                    "./playstore.png",
+                    "https://play.google.com/store/apps/developer?id=Abdalla+Elnaggar",
+                    attrs
+                )
                 PlatformLink("./twitter.png", "https://twitter.com/3bdoelnaggar/", attrs)
 
             }
@@ -133,10 +146,22 @@ fun main() {
                 }) {
                     Text("Projects")
 
-                    Link("صيارين الاسكندرية","https://play.google.com/store/apps/details?id=elnaggar.alexfishers",itemInArticleAndProjectStyle)
+                    Link(
+                        "صيارين الاسكندرية",
+                        "https://play.google.com/store/apps/details?id=elnaggar.alexfishers",
+                        itemInArticleAndProjectStyle
+                    )
 
-                    Link("مطاعم الاسكندرية","https://play.google.com/store/apps/details?id=elnaggar.alexandriarestaurants",itemInArticleAndProjectStyle)
-                    Link("جدول الحصص","https://play.google.com/store/apps/details?id=elnaggar.gadwalelhesas",itemInArticleAndProjectStyle)
+                    Link(
+                        "مطاعم الاسكندرية",
+                        "https://play.google.com/store/apps/details?id=elnaggar.alexandriarestaurants",
+                        itemInArticleAndProjectStyle
+                    )
+                    Link(
+                        "جدول الحصص",
+                        "https://play.google.com/store/apps/details?id=elnaggar.gadwalelhesas",
+                        itemInArticleAndProjectStyle
+                    )
 
                 }
 
